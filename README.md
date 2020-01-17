@@ -3,7 +3,7 @@
 * 不使用 NAT Gateway
 * 加上 DB 層 （DynamoDB）
 * Fork this repo
-	* git clone --recursive git@github.com:your github name/your repository name.git
+	* git clone --recurse-submodules git@github.com:your github name/your repository name.git
 	* Modify .travis.yml
 
 ![](https://i.imgur.com/Kt5yg1k.png)
