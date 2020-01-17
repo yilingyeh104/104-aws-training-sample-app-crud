@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  #將取下的 war 檔案搬動到 tomcat8 的 webapp 根目錄下
+  - source: ROOT.war
+    destination: /var/lib/tomcat8/webapps/
+
+hooks:
+  ApplicationStop:
+    - location: scripts/stop.sh
+      timeout: 300
+  BeforeInstall:
+    - location: scripts/clean.sh
+  ApplicationStart:
+    - location: scripts/start.sh
+      timeout: 360
