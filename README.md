@@ -1,10 +1,10 @@
 ## Homework
 
-* 不使用 NAT Gateway
-* 加上 DB 層 （DynamoDB）
 * Fork this repo
 	* git clone --recurse-submodules git@github.com:your github name/your repository name.git
 	* Modify .travis.yml
+* 加上 DB 層 （DynamoDB）
+* Create VPC Endpoint for（DynamoDB）
 
 ![](https://i.imgur.com/Kt5yg1k.png)
 
